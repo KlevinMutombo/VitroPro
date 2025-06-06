@@ -1,0 +1,14 @@
+.footer {
+    background-color: #97b9d7; /* light blue */
+    color: #1c1f4c; /* dark blue text */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left p,
+  .footer-right p {
+    margin: 0.3rem 0;
+  }

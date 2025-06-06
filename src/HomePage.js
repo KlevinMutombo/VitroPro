@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './HomePage.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import HomeNavbar from './HomeNavbar';
 
 function HomePage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const el = document.getElementById(location.state.scrollTo);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <HomeNavbar />
@@ -67,19 +78,17 @@ function HomePage() {
             </div>
           </div>
 
-
-        <section className="highlights">
-                <div className="tagline">
+          <section className="highlights">
+            <div className="tagline">
               <span className="emoji">✅</span>
-              <span className="text">1300+ Jobs Doneg</span>
+              <span className="text">1300+ Jobs Done</span>
             </div>
-              <div className="tagline">
+            <div className="tagline">
               <span className="emoji">⭐</span>
               <span className="text">4.7 Stars on Google</span>
             </div>
-
+          </section>
         </section>
-</section>
 
         <section id="services" className="features">
           <h2>What We Offer</h2>

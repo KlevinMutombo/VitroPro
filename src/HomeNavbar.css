@@ -23,6 +23,8 @@
     overflow: hidden;
 }
 
+
+
 .nav-links a,
 .nav-links .book-button {
     color: white;
@@ -42,3 +44,35 @@
     background-color: #005fa3;
     border-radius: 5px;
 }
+
+.nav-links .nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .nav-links .nav-btn:hover {
+    background-color: #005fa3;
+    border-radius: 5px;
+  }
+
+  
+  .book-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #0074D9;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .book-link:hover {
+    background-color: #005fa3;
+  }
+  

@@ -88,7 +88,7 @@ const BookingPage = () => {
         <div className="step-column">
           <h3>3. Enter your information.</h3>
           <div className="form-section">
-            <input name="name" value={formData.name} onChange={handleInputChange} placeholder="Your Name" />
+            <input name="name" value={formData.name} onChange={handleInputChange} type = "text" placeholder="Your Name" required/>
             {errors.name && <p className="error-msg">{errors.name}</p>}
             <input name="email" value={formData.email} onChange={handleInputChange} placeholder="Your Email" />
             {errors.email && <p className="error-msg">{errors.email}</p>}

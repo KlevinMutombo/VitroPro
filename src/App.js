@@ -19,7 +19,9 @@ function AppWrapper() {
           <div className="logo">VitroPro</div>
           <div className="nav-links">
             <Link to="/">Home</Link>
-            <Link to="/booking">Book</Link>
+            <Link to="/" state={{ scrollTo: 'about' }}>About Us</Link>
+            <Link to="/" state={{ scrollTo: 'services' }}>Services</Link>
+            <Link to="/" state={{ scrollTo: 'contact' }}>Contact</Link>
           </div>
         </div>
       )}

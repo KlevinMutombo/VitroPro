@@ -49,13 +49,25 @@
 
 .navbar {
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between; 
+  align-items: center;
   padding: 1rem 2rem;
   background-color: #001f3f;
   color: white;
 }
 
-.navbar a {
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
   color: white;
   text-decoration: none;
   font-weight: bold;

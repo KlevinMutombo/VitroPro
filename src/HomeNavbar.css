@@ -1,0 +1,44 @@
+.home-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #001f3f;
+    color: white;
+    z-index: 999;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a8cff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    /* <-- This prevents links from overflowing */
+    justify-content: flex-end;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.nav-links a,
+.nav-links .book-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-links .book-button {
+    background-color: #0074D9;
+    border-radius: 5px;
+}
+
+.nav-links a:hover,
+.nav-links .book-button:hover {
+    background-color: #005fa3;
+    border-radius: 5px;
+}

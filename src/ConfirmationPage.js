@@ -15,7 +15,6 @@ const ConfirmationPage = () => {
       <p><strong>Time:</strong> {time}</p>
       <p><strong>Status:</strong> Confirmed</p>
       <p>An email confirmation has been sent. Looking forward to seeing you!</p>
-      <button className="manage-btn">Manage my booking</button>
     </div>
   );
 };
